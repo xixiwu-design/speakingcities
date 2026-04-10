@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'FotoFuente.dart'; 
+
+import 'components/fotoFunete.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,10 +11,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!a'),
+          child: Fotofunete(URL: "lib/images/foto1.jpg"),
         ),
       ),
     );
