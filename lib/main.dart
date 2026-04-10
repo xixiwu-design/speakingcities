@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'components/SetFoto.dart';
 import 'components/fotoFunete.dart';
 
 void main() {
@@ -14,10 +15,28 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Fotofunete(URL: "lib/images/foto1.jpg"),
+        body: Container(
+          child: Stack(
+            children: [
+
+             
+                SizedBox(child: Fotofunete(URL: "lib/images/foto5.jpg")),
+              
+
+
+               Center(
+                 child: SetFoto(
+                    url: "lib/images/foto4.jpg",
+                    height: 200,
+                  ),
+               ),
+              
+
+            ],
+          ),
         ),
-      ),
-    );
+          ),
+      );
+    
   }
 }

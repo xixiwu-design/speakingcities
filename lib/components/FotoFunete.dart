@@ -19,9 +19,9 @@ class Fotofunete extends StatelessWidget {
         ),
 
         BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 5, sigmaY: 5),
+          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 5),
           child: Container(
-            color: Colors.black.withOpacity(0.3),
+            color: const Color.fromARGB(255, 95, 93, 104).withOpacity(0.3),
           ),
         ),
       ],
