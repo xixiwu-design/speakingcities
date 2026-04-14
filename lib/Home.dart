@@ -18,7 +18,8 @@ class HomePage extends StatelessWidget {
               Center(
                 child: SetFoto(url: "lib/images/foto4.jpg", height: 200),
               ),
-              Titulo(text: "Sydney"),
+             
+                        
               Container(
                 height: 50,
                 width: double.infinity,
