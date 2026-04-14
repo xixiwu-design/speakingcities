@@ -26,13 +26,13 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Boton(text: "Community Culture", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
-                       Boton(text: "Social Culture", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
+                       Boton(text: "Regional English", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Boton(text: "Cultural Traits", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
+                      Boton(text: "IT industry", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
                        Boton(text: "Community Life", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
                     ],
                   ),
