@@ -7,12 +7,12 @@ class Titulo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 260,
 
       child: Center(
         child: Text(
         text,style: TextStyle(
-          fontSize: 42, 
+          fontSize: 60, 
       fontWeight: FontWeight.bold,
       color: Color.fromARGB(255, 255, 255, 255),
       ),

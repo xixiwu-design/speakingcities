@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
-import 'package:flutter/material.dart';
 
 class Fotofunete extends StatelessWidget {
   final String URL;
