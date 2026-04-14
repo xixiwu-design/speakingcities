@@ -14,7 +14,6 @@ class HomePage extends StatelessWidget {
               SizedBox(child: Fotofunete(URL: "lib/images/foto5.jpg")),
               Center(child: SetFoto(url: "lib/images/foto4.jpg", height: 200)),
                         
-              
               Container(
                 height: 50,
                 width: double.infinity,
