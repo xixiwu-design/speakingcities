@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:speakingcities/Home.dart';
 
 import 'components/SetFoto.dart';
 import 'components/fotoFunete.dart';
 import 'components/Titulo.dart';
 import 'components/Texto.dart';
 
-void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class ejemPage extends StatelessWidget {
+  const ejemPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
         body: Container(
           child: Stack(
             children: [
@@ -47,7 +42,7 @@ class MainApp extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MainApp()),
+                    MaterialPageRoute(builder: (context) => HomePage()),
                   );
                 },
                 child: Container(
@@ -83,7 +78,6 @@ class MainApp extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
