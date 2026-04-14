@@ -3,8 +3,10 @@ import 'package:speakingcities/components/FotoFunete.dart';
 import 'package:speakingcities/components/SetFoto.dart';
 import 'package:speakingcities/components/Titulo.dart';
 
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +17,7 @@ class HomePage extends StatelessWidget {
               SizedBox(child: Fotofunete(URL: "lib/images/foto5.jpg")),
               Center(child: SetFoto(url: "lib/images/foto4.jpg", height: 200)),
                         Titulo(text: "Sydney"),
+
               Container(
                 height: 50,
                 width: double.infinity,
@@ -45,7 +48,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
-              
+             
             ],
           ),
         ),
