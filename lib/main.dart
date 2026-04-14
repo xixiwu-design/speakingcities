@@ -33,7 +33,7 @@ class MainApp extends StatelessWidget {
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 5),
-                    child: Icon(Icons.account_box_sharp),
+                    child: Icon(Icons.abc_outlined),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
@@ -41,7 +41,7 @@ class MainApp extends StatelessWidget {
                       width: 30,
                       height: 30,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(188, 12, 23, 75),
+                        color: Color.fromARGB(206, 12, 22, 75),
                         border: Border.all(
                           color: Color.fromARGB(146, 209, 213, 231),
                           width: 2,
