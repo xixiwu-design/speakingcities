@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+import 'package:speakingcities/components/FotoFunete.dart';
+import 'package:speakingcities/components/SetFoto.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Container(
+          child: Stack(
+            children: [
+              SizedBox(child: Fotofunete(URL: "lib/images/foto5.jpg")),
+
+              Center(child: SetFoto(url: "lib/images/foto4.jpg", height: 200)),
+              
+              
+              
+              Container(
+                height: 50,
+                width: double.infinity,               
+                color: Color.fromARGB(146, 30, 52, 150),
+                child: Row(
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 5),
+                    child: Icon(Icons.abc_outlined),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Container(
+                      width: 30,
+                      height: 30,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(206, 12, 22, 75),
+                        border: Border.all(
+                          color: Color.fromARGB(146, 209, 213, 231),
+                          width: 2,
+                        ),
+                        borderRadius: BorderRadius.circular(50),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              ),
+              
+            ],
+          ),
+        ),
+      );
+  }
+}
