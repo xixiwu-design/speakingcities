@@ -25,15 +25,15 @@ class HomePage extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Boton(text: "111", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
-                       Boton(text: "111", page: ejemPage(), color: const Color.fromARGB(255, 114, 48, 48)),
+                      Boton(text: "Community Culture", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
+                       Boton(text: "Social Culture", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
                     ],
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Boton(text: "111", page: ejemPage(), color: const Color.fromARGB(255, 114, 48, 48)),
-                       Boton(text: "111", page: ejemPage(), color: const Color.fromARGB(255, 114, 48, 48)),
+                      Boton(text: "Cultural Traits", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
+                       Boton(text: "Community Life", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
                     ],
                   ),
                 ],
