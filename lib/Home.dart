@@ -4,6 +4,9 @@ import 'package:speakingcities/components/FotoFunete.dart';
 import 'package:speakingcities/components/SetFoto.dart';
 import 'package:speakingcities/components/Titulo.dart';
 import 'package:speakingcities/fileexample.dart';
+import 'package:speakingcities/pages/lengua.dart';
+import 'package:speakingcities/pages/life.dart';
+import 'package:speakingcities/pages/job.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -18,27 +21,38 @@ class HomePage extends StatelessWidget {
             children: [
               SizedBox(child: Fotofunete(URL: "lib/images/foto5.jpg")),
 
-              Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Center(
+                child: Container(
+                height: 400,
+                width: 1000,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(121, 212, 206, 198).withOpacity(0.5),
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Boton(text: "Community Culture", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
-                       Boton(text: "Regional English", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
+                      
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Boton(text: "Community Culture", page: ejemPage(), color: const Color.fromARGB(218, 60, 63, 110)),
+                           Boton(text: "Regional English", page: LenguaPage(), color: const Color.fromARGB(218, 60, 63, 110)),
+                        ],
+                      ),
+                      SizedBox(height: 50,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Boton(text: "IT industry", page: JobPage(), color: const Color.fromARGB(218, 76, 58, 105)),
+                           Boton(text: "Community Life", page: LifePage(), color: const Color.fromARGB(218, 76, 58, 105)),
+                        ],
+                      ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Boton(text: "IT industry", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
-                       Boton(text: "Community Life", page: ejemPage(), color: const Color.fromARGB(122, 114, 48, 48)),
-                    ],
-                  ),
-                ],
+                ),
               ),
-
                         Titulo(text: "Sydney"),
 
 
