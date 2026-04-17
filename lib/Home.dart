@@ -7,6 +7,7 @@ import 'package:speakingcities/fileexample.dart';
 import 'package:speakingcities/pages/lengua.dart';
 import 'package:speakingcities/pages/life.dart';
 import 'package:speakingcities/pages/job.dart';
+import 'package:speakingcities/pages/valor.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Boton(text: "Community Culture", page: ejemPage(), color: const Color.fromARGB(218, 60, 63, 110)),
+                          Boton(text: "Community Culture", page: valorPage(), color: const Color.fromARGB(218, 60, 63, 110)),
                            Boton(text: "Regional English", page: LenguaPage(), color: const Color.fromARGB(218, 60, 63, 110)),
                         ],
                       ),
