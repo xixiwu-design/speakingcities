@@ -28,7 +28,7 @@ class SetFoto extends StatelessWidget {
 
             return Container(
               height: height,
-              width: height * ratio, // ✔ 自动按比例算宽度
+              width: height * ratio, 
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12),

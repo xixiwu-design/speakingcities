@@ -12,72 +12,171 @@ class LifePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-          child: Stack(
-            children: [
-              SizedBox(child: Fotofunete(URL: "lib/images/foto5.jpg")),
-              Titulo(text: "Titulo"),
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      width: 300,
-                      height: 200,
-                      child: Column(
-                        children: [
-                          Texto(text: "Hola,dfffffffffffffffffffffffffffffffffffffffffffffff"),
-                          Texto(text: "Es,effffffffffffffffffffffffffffff"),
-                          Texto(text: "Uno"),
-                          Texto(text: "Texto"),
-                        ],
-                      ),
-                    ),
-                    SetFoto(url: "lib/images/foto4.jpg", height: 200),
-                  ],
-                ),
-              ),
+      body: Container(
+        child: Stack(
+          children: [
+            SizedBox(
+              child: Fotofunete(URL: "lib/images/foto2.jpg"),
+            ),
 
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
-                  );
-                },
-                child: Container(
-                  height: 50,
-                  width: double.infinity,
-                  color: Color.fromARGB(146, 27, 40, 97),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: Container(
-                          width: 60,
-                          height: 40,
-                          child: Icon(
-                            Icons.arrow_left_rounded,
-                            color: Color.fromARGB(255, 36, 42, 134),
-                            size: 40,
-                          ),
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(144, 220, 222, 228),
-                            border: Border.all(
-                              color: Color.fromARGB(146, 197, 198, 204),
-                              width: 2,
+            Titulo(text: "Life in Sydney"),
+
+            Positioned.fill(
+              child: Padding(
+                padding: const EdgeInsets.only(top: 100),
+                child: Center(
+                  child: SizedBox(
+                    height: 650,
+                    child: Container(
+                      width: 950,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(78, 43, 36, 71).withOpacity(0.5),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.all(50),
+                        child: Column(
+                          children: [
+                            
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Natural environment",
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Texto(text: " - Large natural reserves around the city"),
+                                      Texto(text: " - Easy access to wildlife (parrots, koalas in nearby areas)"),
+                            
+                                      SizedBox(height: 20),
+                            
+                                      Text(
+                                        "City life",
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Texto(text: " - A modern city"),
+                                      Texto(text: " - High quality of life"),
+                                    ],
+                                  ),
+                                ),
+                            
+                                SizedBox(width: 20),
+                            
+                                SetFoto(
+                                  url: "lib/images/life.webp",
+                                  height: 250,
+                                ),
+                              ],
                             ),
-                            borderRadius: BorderRadius.circular(50),
-                          ),
+
+                            SizedBox(height: 50),
+
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                
+                                SetFoto(
+                                  url: "lib/images/work.jpg",
+                                  height: 250,
+                                ),
+                            
+                                SizedBox(width: 100),
+                            
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Social environment",
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Texto(text: " - Multicultural society"),
+                                      Texto(text: " - Friendly and inclusive people"),
+                            
+                                      SizedBox(height: 20),
+                            
+                                      Text(
+                                        "Study & work",
+                                        style: TextStyle(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                      Texto(text: " - Many opportunities in IT industry"),
+                                      Texto(text: " - International working environment"),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                    ],
+                    ),
                   ),
                 ),
               ),
-            ],
-          ),
+            ),
+
+            // BACK BUTTON
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              },
+              child: Container(
+                height: 50,
+                width: double.infinity,
+                color: Color.fromARGB(146, 27, 46, 97),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20),
+                      child: Container(
+                        width: 60,
+                        height: 40,
+                        child: Icon(
+                          Icons.arrow_left_rounded,
+                          color: Color.fromARGB(255, 136, 74, 160),
+                          size: 40,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Color.fromARGB(144, 220, 222, 228),
+                          border: Border.all(
+                            color: Color.fromARGB(146, 197, 198, 204),
+                            width: 2,
+                          ),
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
-      );
+      ),
+    );
   }
 }
